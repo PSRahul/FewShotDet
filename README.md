@@ -7,13 +7,13 @@ The models were implemented using the [Detectron2](https://github.com/facebookre
 ## Key Results
 
 ### Pre-training for object classification may not translate to object detection.
-![Screenshot](assests/1.png)
+![Screenshot](assets/1.png)
 
 On training a ResNet-50 feature extractor for a Faster RCNN detector using the self-supervised method of [DINO](https://arxiv.org/abs/2104.14294) and [DetCO](https://arxiv.org/abs/2102.04803) as a pretext for object detection, it was found that only those contrastive self-supervsion techniques that preserve global and contextual embeddings from a image can improve the performance on detection!
 
 ### Using FPN with ResNet speeds up training significantly, while giving similar performance for the same amount of epochs. 
 
-![Screenshot](assests/2.png)
+![Screenshot](assets/2.png)
 
 This is really useful to speed up network training without loss of accuracy. FPN also help detecting object at different scales easier.
 
